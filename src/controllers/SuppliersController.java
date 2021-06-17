@@ -65,8 +65,7 @@ public class SuppliersController implements ActionListener, MouseListener, KeyLi
                     || views.txt_supplier_address.getText().equals("")
                     || views.txt_supplier_telephone.getText().equals("")
                     || views.txt_supplier_email.getText().equals("")
-                    || views.cmb_supplier_country.getSelectedItem().toString().equals("")
-                    || views.cmb_supplier_city.getSelectedItem().toString().equals("")) {
+                    || views.cmb_supplier_country.getSelectedItem().toString().equals("")) {
 
                 JOptionPane.showMessageDialog(null, "Todos los campos son obligatorios ");
             } else {
@@ -77,7 +76,7 @@ public class SuppliersController implements ActionListener, MouseListener, KeyLi
                 supplier.setTelephone(views.txt_supplier_telephone.getText().trim());
                 supplier.setEmail(views.txt_supplier_email.getText().trim());
                 supplier.setCountry(views.cmb_supplier_country.getSelectedItem().toString());
-                supplier.setCity(views.cmb_supplier_city.getSelectedItem().toString());
+
                 //Llamar a método de registrar
                 //Validar si todo ha salido bien 
                 if (supplierDao.registerSupplierQuery(supplier)) {
@@ -100,8 +99,7 @@ public class SuppliersController implements ActionListener, MouseListener, KeyLi
                     && views.txt_supplier_address.getText().equals("")
                     && views.txt_supplier_telephone.getText().equals("")
                     && views.txt_supplier_email.getText().equals("")
-                    && views.cmb_supplier_country.getSelectedItem().toString().equals("")
-                    && views.cmb_supplier_city.getSelectedItem().toString().equals("")) {
+                    && views.cmb_supplier_country.getSelectedItem().toString().equals("")) {
 
                 JOptionPane.showMessageDialog(null, "No ha realizado ningún cambio");
             } else {
@@ -113,7 +111,7 @@ public class SuppliersController implements ActionListener, MouseListener, KeyLi
                 supplier.setTelephone(views.txt_supplier_telephone.getText().trim());
                 supplier.setEmail(views.txt_supplier_email.getText().trim());
                 supplier.setCountry(views.cmb_supplier_country.getSelectedItem().toString());
-                supplier.setCity(views.cmb_supplier_city.getSelectedItem().toString());
+
                 //Llamar a método de modificar
                 //Validar si todo ha salido bien 
                 if (supplierDao.updateSupplierQuery(supplier)) {
@@ -163,8 +161,8 @@ public class SuppliersController implements ActionListener, MouseListener, KeyLi
             row[4] = list.get(i).getTelephone();
             row[5] = list.get(i).getEmail();
             row[6] = list.get(i).getCountry();
-            row[7] = list.get(i).getCity();
 
+            
             model.addRow(row);
         }
         views.suppliers_table.setModel(model);
@@ -181,8 +179,8 @@ public class SuppliersController implements ActionListener, MouseListener, KeyLi
             views.txt_supplier_telephone.setText(views.suppliers_table.getValueAt(row, 4).toString());
             views.txt_supplier_email.setText(views.suppliers_table.getValueAt(row, 5).toString());
             views.cmb_supplier_country.setSelectedItem(views.suppliers_table.getValueAt(row, 6).toString());
-            views.cmb_supplier_city.setSelectedItem(views.suppliers_table.getValueAt(row, 7).toString());
 
+            
             views.btn_register_supplier.setEnabled(false);
             views.txt_supplier_id.setEnabled(false);
         }else if (e.getSource() == views.jLabelSuppliers) {
@@ -252,7 +250,6 @@ public class SuppliersController implements ActionListener, MouseListener, KeyLi
         views.txt_supplier_telephone.setText("");
         views.txt_supplier_email.setText("");
         views.cmb_supplier_country.setSelectedIndex(0);
-        views.cmb_supplier_city.setSelectedIndex(0);
     }
 
     //Método para mostrar el nombre del proveedor

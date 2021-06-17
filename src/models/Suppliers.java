@@ -28,7 +28,7 @@ public class Suppliers {
     
     //Constructor con parámetros
 
-    public Suppliers(int id, String name, String description, String address, String telephone, String email, String country, String city, String created, String updated) {
+    public Suppliers(int id, String name, String description, String address, String telephone, String email, String country, String created, String updated) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -36,7 +36,6 @@ public class Suppliers {
         this.telephone = telephone;
         this.email = email;
         this.country = country;
-        this.city = city;
         this.created = created;
         this.updated = updated;
     }
@@ -99,9 +98,6 @@ public class Suppliers {
         this.country = country;
     }
 
-    public String getCity() {
-        return city;
-    }
 
     public void setCity(String city) {
         this.city = city;

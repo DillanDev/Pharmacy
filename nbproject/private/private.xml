@@ -4,17 +4,16 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/xampp/htdocs/Drogueria/src/controllers/LoginController.java</file>
-            <file>file:/C:/xampp/htdocs/Drogueria/src/models/Products.java</file>
-            <file>file:/C:/xampp/htdocs/Drogueria/src/controllers/CustomersController.java</file>
-            <file>file:/C:/xampp/htdocs/Drogueria/src/main_pharmacy/main.java</file>
-            <file>file:/C:/xampp/htdocs/Drogueria/src/controllers/ProductsController.java</file>
+            <file>file:/C:/xampp/htdocs/Drogueria/src/views/Administrador.java</file>
+            <file>file:/C:/xampp/htdocs/Drogueria/src/models/Suppliers.java</file>
+            <file>file:/C:/xampp/htdocs/Drogueria/src/views/Assistant.java</file>
+            <file>file:/C:/xampp/htdocs/Drogueria/src/models/CustomersDao.java</file>
+            <file>file:/C:/xampp/htdocs/Drogueria/src/models/ProductsDao.java</file>
             <file>file:/C:/xampp/htdocs/Drogueria/src/controllers/SuppliersController.java</file>
-            <file>file:/C:/xampp/htdocs/Drogueria/src/models/Tables.java</file>
-            <file>file:/C:/xampp/htdocs/Drogueria/src/models/DynamicCombobox.java</file>
-            <file>file:/C:/xampp/htdocs/Drogueria/src/controllers/PurchasesController.java</file>
             <file>file:/C:/xampp/htdocs/Drogueria/src/controllers/CategoriesController.java</file>
+            <file>file:/C:/xampp/htdocs/Drogueria/src/models/Customers.java</file>
             <file>file:/C:/xampp/htdocs/Drogueria/src/models/Categories.java</file>
-            <file>file:/C:/xampp/htdocs/Drogueria/src/controllers/SettingsController.java</file>
+            <file>file:/C:/xampp/htdocs/Drogueria/src/models/SuppliersDao.java</file>
         </group>
     </open-files>
 </project-private>

@@ -1278,7 +1278,6 @@
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jLabel20" alignment="0" pref="79" max="32767" attributes="0"/>
                                   <Component id="jLabel21" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jLabel22" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
@@ -1288,7 +1287,6 @@
                                   <Component id="txt_supplier_id" max="32767" attributes="0"/>
                               </Group>
                               <Component id="cmb_supplier_country" min="-2" pref="166" max="-2" attributes="0"/>
-                              <Component id="cmb_supplier_city" min="-2" pref="166" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="105" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -1307,6 +1305,19 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="28" pref="28" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="btn_register_supplier" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                                  <Component id="btn_update_supplier" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                                  <Component id="btn_delete_supplier" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="txt_supplier_email" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Component id="jLabel36" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
@@ -1330,26 +1341,12 @@
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="txt_supplier_telephone" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="cmb_supplier_city" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txt_supplier_id" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                                   </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="btn_register_supplier" min="-2" pref="30" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                                  <Component id="btn_update_supplier" min="-2" pref="30" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                                  <Component id="btn_delete_supplier" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <EmptySpace pref="68" max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="txt_supplier_email" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                              <Component id="jLabel36" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txt_supplier_id" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                              <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="0" pref="16" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1393,14 +1390,6 @@
                       <Font name="Tahoma" size="12" style="1"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Pa&#xed;s:"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel22">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Tahoma" size="12" style="1"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="Ciudad:"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txt_supplier_name">
@@ -1492,21 +1481,6 @@
                         <StringItem index="0" value="Colombia"/>
                         <StringItem index="1" value="Peru"/>
                         <StringItem index="2" value="Argentina"/>
-                      </StringArray>
-                    </Property>
-                  </Properties>
-                  <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-                  </AuxValues>
-                </Component>
-                <Component class="javax.swing.JComboBox" name="cmb_supplier_city">
-                  <Properties>
-                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="3">
-                        <StringItem index="0" value="Bogota"/>
-                        <StringItem index="1" value="Lima"/>
-                        <StringItem index="2" value="Buenos Aires"/>
                       </StringArray>
                     </Property>
                   </Properties>

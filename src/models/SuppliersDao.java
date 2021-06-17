@@ -29,7 +29,7 @@ public class SuppliersDao {
     //Registrar empleado
     public boolean registerSupplierQuery(Suppliers supplier) {
 
-        String query = "INSERT INTO suppliers (name, description, address, telephone, email, country, city, created, updated) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        String query = "INSERT INTO suppliers (name, description, address, telephone, email, country, created, updated) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
         Timestamp datetime = new Timestamp(new Date().getTime());
 
         try {
@@ -41,7 +41,6 @@ public class SuppliersDao {
             pst.setString(4, supplier.getTelephone());
             pst.setString(5, supplier.getEmail());
             pst.setString(6, supplier.getCountry());
-            pst.setString(7, supplier.getCity());
             pst.setTimestamp(8, datetime);
             pst.setTimestamp(9, datetime);
             pst.execute();
@@ -80,7 +79,6 @@ public class SuppliersDao {
                 supplier.setTelephone(rs.getString("telephone"));
                 supplier.setEmail(rs.getString("email"));
                 supplier.setCountry(rs.getString("country"));
-                supplier.setCity(rs.getString("city"));
                 list_supliers.add(supplier);
             }
 
@@ -93,7 +91,7 @@ public class SuppliersDao {
     //Modificar empleado
     public boolean updateSupplierQuery(Suppliers supplier) {
 
-        String query = "UPDATE suppliers SET name = ?, description = ?, address = ?, telephone = ?, email = ?, country = ?, city = ?, updated = ? WHERE id = ?";
+        String query = "UPDATE suppliers SET name = ?, description = ?, address = ?, telephone = ?, email = ?, country = ?, updated = ? WHERE id = ?";
         Timestamp datetime = new Timestamp(new Date().getTime());
 
         try {
@@ -105,7 +103,6 @@ public class SuppliersDao {
             pst.setString(4, supplier.getTelephone());
             pst.setString(5, supplier.getEmail());
             pst.setString(6, supplier.getCountry());
-            pst.setString(7, supplier.getCity());
             pst.setTimestamp(8, datetime);
             pst.setInt(9, supplier.getId());
             pst.execute();
